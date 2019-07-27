@@ -44,6 +44,9 @@ add_executable(Game
     src/sys/house.hpp
 )
 
+set(SDL2_INCLUDE_DIR /usr/local/Cellar/sdl2/2.0.9_1/include)
+set(SDL2_LIBRARY /usr/local/Cellar/sdl2/2.0.9_1/lib)
+
 if(CMAKE_TOOLCHAIN_FILE)
     message("Using SDL2 toolchain file")
     message(${CMAKE_TOOLCHAIN_FILE})
